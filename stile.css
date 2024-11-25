@@ -15,7 +15,7 @@ body {
     padding: 0; /* Rimuove il padding */
     margin: 0; /* Rimuove il margine */
     width: 100%; /* Larghezza del contenitore */
-    max-width: 800px;
+    /*max-width: 800px;*/
     align-items: center;
 }
 
