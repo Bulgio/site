@@ -25,7 +25,7 @@ body {
     position: relative;
     width: 100%; /* Adatta la larghezza al contenitore parent */
     max-width: 800px; /* Imposta una larghezza massima per il contenitore */
-    height: auto; /* Altezza fissa per i box */
+    height: 800px; /* Altezza fissa per i box */
     overflow: hidden; /* Impedisce al contenuto di uscire dal box */
     display: flex;
     align-items: center;
