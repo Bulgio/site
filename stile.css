@@ -66,7 +66,6 @@ body {
     /* Aggiungi ombra (opzionale, per dare un effetto di profondità) */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
-}
 
 /* Animazione al passaggio del mouse */
 .contenitore:hover .immagine {
