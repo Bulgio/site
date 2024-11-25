@@ -25,7 +25,7 @@ body {
     position: relative;
     width: 100%; /* Adatta la larghezza al contenitore parent */
     max-width: 800px; /* Imposta una larghezza massima per il contenitore */
-    height: 200px; /* Altezza fissa per i box */
+    height: auto; /* Altezza fissa per i box */
     overflow: hidden; /* Impedisce al contenuto di uscire dal box */
     display: flex;
     align-items: center;
@@ -61,11 +61,10 @@ body {
     transform: translateX(100%); /* Paragrafo nascosto inizialmente */
     transition: transform 0.5s ease-out, opacity 0.5s ease-out;
     padding: 1rem;
-    font-size: 1.25rem;
+    font-size: 1rem;
     text-align: center;
     border-radius: 15px;
     border: 2px solid #205a53;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     box-sizing: border-box; /* Includi il padding nel calcolo della larghezza */
 }
 
