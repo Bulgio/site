@@ -23,10 +23,10 @@ body {
 /* Singolo box */
 .contenitore {
     position: relative;
-    width: 100%;  /* Adatta la larghezza al contenitore parent */
-    max-width: 800px; /* Imposta una larghezza massima per il contenitore (opzionale) */
-    height: 200px;
-    overflow: hidden;
+    width: 100%; /* Adatta la larghezza al contenitore parent */
+    max-width: 800px; /* Imposta una larghezza massima per il contenitore */
+    height: 200px; /* Altezza fissa per i box */
+    overflow: hidden; /* Impedisce al contenuto di uscire dal box */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -34,7 +34,7 @@ body {
     border-radius: 0;
     box-shadow: none;
     margin: 0;
-    box-sizing: border-box; /* Include padding e bordo nelle dimensioni */
+    box-sizing: border-box;
 }
 
 /* Immagine all'interno del box */
@@ -50,21 +50,23 @@ body {
     position: absolute;
     right: 0;
     top: 0;
-    width: 100%; /* Aggiungi 100% per fare in modo che occupi tutta la larghezza */
-    height: 100%;
+    width: 100%; /* Larghezza del paragrafo 100% */
+    height: 100%; /* Mantiene l'altezza all'interno del box */
     display: flex;
     align-items: center;
     justify-content: center;
     background-color: #ffffff;
     color: #333;
     opacity: 0;
-    transform: translateX(100%); /* Continua a nascondere fuori dalla vista */
+    transform: translateX(100%); /* Paragrafo nascosto inizialmente */
     transition: transform 0.5s ease-out, opacity 0.5s ease-out;
     padding: 1rem;
-    font-size: 1rem;
+    font-size: 1.25rem;
     text-align: center;
     border-radius: 15px;
-    border: 4px solid #205a53;
+    border: 2px solid #205a53;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box; /* Includi il padding nel calcolo della larghezza */
 }
 
 /* Animazione al passaggio del mouse */
@@ -73,7 +75,7 @@ body {
 }
 
 .contenitore:hover .paragrafo {
-    transform: translateX(0);
+    transform: translateX(0); /* Paragrafo visibile quando hoverato */
     opacity: 1;
     transition-delay: 0.2s;
 }
