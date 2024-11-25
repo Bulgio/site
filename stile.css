@@ -57,7 +57,7 @@ body {
     transform: translateX(100%);
     transition: transform 0.5s ease, opacity 0.5s ease;
     padding: 1rem;
-    font-size: 1.5rem;
+    font-size: 1.25rem;
     text-align: center;
      /* Aggiungi bordi arrotondati */
     border-radius: 15px; /* Modifica il valore per la rotondità che preferisci */
