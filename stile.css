@@ -6,14 +6,14 @@ body {
     background-color: #ffffff;
     display: flex;
     justify-content: center;
-    align-items: center; /* Centra anche verticalmente */
+    align-items: center;
     height: 100vh; /* Assicura che il body occupi l'altezza dell'intera finestra */
 }
 
 /* Contenitore generale */
 .container {
     display: flex;
-    flex-direction: column; /* Disposizione verticale */
+    flex-direction: column;
     padding: 0;
     margin: 0;
     width: 100%;
@@ -23,7 +23,8 @@ body {
 /* Singolo box */
 .contenitore {
     position: relative;
-    width: 100%;
+    width: 100%;  /* Adatta la larghezza al contenitore parent */
+    max-width: 800px; /* Imposta una larghezza massima per il contenitore (opzionale) */
     height: 200px;
     overflow: hidden;
     display: flex;
@@ -33,6 +34,7 @@ body {
     border-radius: 0;
     box-shadow: none;
     margin: 0;
+    box-sizing: border-box; /* Include padding e bordo nelle dimensioni */
 }
 
 /* Immagine all'interno del box */
@@ -48,7 +50,7 @@ body {
     position: absolute;
     right: 0;
     top: 0;
-    width: 50%;
+    width: 100%; /* Aggiungi 100% per fare in modo che occupi tutta la larghezza */
     height: 100%;
     display: flex;
     align-items: center;
@@ -56,13 +58,13 @@ body {
     background-color: #ffffff;
     color: #333;
     opacity: 0;
-    transform: translateX(100%);
+    transform: translateX(100%); /* Continua a nascondere fuori dalla vista */
     transition: transform 0.5s ease-out, opacity 0.5s ease-out;
     padding: 1rem;
     font-size: 1rem;
     text-align: center;
     border-radius: 15px;
-    border: 2px solid #205a53;
+    border: 4px solid #205a53;
 }
 
 /* Animazione al passaggio del mouse */
