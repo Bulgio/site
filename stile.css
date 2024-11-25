@@ -57,8 +57,17 @@ body {
     transform: translateX(100%);
     transition: transform 0.5s ease, opacity 0.5s ease;
     padding: 1rem;
-    font-size: 1rem;
+    font-size: 1.5rem;
     text-align: center;
+     /* Aggiungi bordi arrotondati */
+    border-radius: 15px; /* Modifica il valore per la rotondità che preferisci */
+    
+    /* Aggiungi un bordo (opzionale) */
+    border: 2px solid #ccc; /* Cambia il colore e la larghezza del bordo a piacere */
+    
+    /* Aggiungi ombra (opzionale, per dare un effetto di profondità) */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
 }
 
 /* Animazione al passaggio del mouse */
