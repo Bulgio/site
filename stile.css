@@ -51,7 +51,7 @@ body {
     right: 0;
     top: 0;
     width: 100%; /* Larghezza del paragrafo 100% */
-    height: 100%; /* Mantiene l'altezza all'interno del box */
+    height: 80%; /* Mantiene l'altezza all'interno del box */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -64,7 +64,7 @@ body {
     font-size: 1rem;
     text-align: center;
     border-radius: 15px;
-    border: 2px solid #205a53;
+    border: 4px solid #205a53;
     box-sizing: border-box; /* Includi il padding nel calcolo della larghezza */
 }
 
