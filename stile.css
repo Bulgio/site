@@ -53,7 +53,8 @@ body {
     position: absolute;
     right: 0;
     top: 0;
-    width: 100%; /* Larghezza del paragrafo 100% */
+    width: 60%; /* Larghezza del paragrafo 100% */
+    left: auto;
     height: calc(100% - 20px); /* Mantiene l'altezza all'interno del box */
     overflow: hidden;
     word-wrap: break-word;
