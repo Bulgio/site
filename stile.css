@@ -7,7 +7,9 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh; /* Assicura che il body occupi l'altezza dell'intera finestra */
+    min-height: 100vh; /* Permette al body di essere almeno alto quanto il viewport */
+    height: auto; /* L'altezza del body si adatta al contenuto */
+    overflow-x: hidden; /* Per sicurezza, evita overflow orizzontale */
 }
 
 /* Contenitore generale */
@@ -18,6 +20,7 @@ body {
     margin: 0;
     width: 100%;
     align-items: center;
+    overflow-y: auto;
 }
 
 /* Singolo box */
