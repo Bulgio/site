@@ -54,7 +54,9 @@ body {
     right: 0;
     top: 0;
     width: 100%; /* Larghezza del paragrafo 100% */
-    height: 80%; /* Mantiene l'altezza all'interno del box */
+    height: calc(100% - 20px); /* Mantiene l'altezza all'interno del box */
+    overflow: hidden;
+    word-wrap: break-word;
     display: flex;
     align-items: center;
     justify-content: center;
