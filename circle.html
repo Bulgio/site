@@ -20,8 +20,8 @@
             position: relative;
             width: auto;  /* Larghezza adattata alla finestra */
             height: auto; /* Altezza proporzionale alla larghezza */
-            /*max-width: 1000px;   Limite massimo per la larghezza */
-            /*max-height: 1000px; /* Limite massimo per l'altezza */
+            max-width: 1000px;  /* Limite massimo per la larghezza */
+            max-height: 1000px; /* Limite massimo per l'altezza */
             display: flex;
             justify-content: center;
             align-items: center;
@@ -29,8 +29,8 @@
 
         .center {
             position: relative;
-            /*width: 80vw; /* Adatta la larghezza della pagina */
-            /*height: 80vw; /* Mantieni proporzionalità quadrata */
+            width: 80vw; /* Adatta la larghezza della pagina */
+            height: 80vw; /* Mantieni proporzionalità quadrata */
             max-width: 500px; /* Impostare un limite massimo */
             max-height: 500px;
 
@@ -44,17 +44,17 @@
             width: 100%;
             height: 100%;
             object-fit: contain; /* Adatta l'immagine senza deformarla */
-            z-index: 1; /* L'immagine sopra lo Sketchfab */
+            z-index: 0; /* L'immagine sopra lo Sketchfab */
         }
 
         /* Sketchfab iframe */
         iframe {
             position: absolute;
-            top: 140px;
-            left: 140px;
-            width: 50%;
-            height: 50%;
-            z-index: 0; /* Lo Sketchfab rimane sotto l'immagine */
+            top: 200px;
+            left: 200px;
+            width: 25%;
+            height: 25%;
+            z-index: 1; /* Lo Sketchfab rimane sotto l'immagine */
             border: none;
             border-radius: 50%; /* Rende il contenitore circolare */
             overflow: hidden; /* Nasconde le parti dell'iframe fuori dal cerchio */
@@ -73,7 +73,7 @@
                 allow="autoplay; fullscreen; xr-spatial-tracking">
             </iframe>
             <!-- Immagine sopra -->
-            <img src="Immagini/img.png" alt="Overlay Image" class="overlay-image">
+            <img src="img_nobg.png" alt="Overlay Image" class="overlay-image">
         </div>
     </div>
 </body>
